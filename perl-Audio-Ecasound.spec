@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test"
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Ecasound
@@ -8,7 +8,7 @@ Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interfac
 Summary(pl):	Modu³ Perla Audio::Ecasound - dowi±zania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
 Version:	0.2
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -44,7 +44,8 @@ fi
 echo 'y' | perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{!?_without_tests:%{__make} test}
+# test disabled by default - it hangs
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
