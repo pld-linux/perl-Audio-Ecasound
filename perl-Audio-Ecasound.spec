@@ -12,7 +12,7 @@ Version:	0.2
 Release:	3
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-ecasound2.2.patch
 BuildRequires:	ecasound-devel >= 2.2.0
 BuildRequires:	perl >= 5.6
