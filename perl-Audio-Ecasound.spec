@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Audio
-%define		pnam	Ecasound
+%define	pdir	Audio
+%define	pnam	Ecasound
 Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interface
 Summary(pl):	Modu³ Perla Audio::Ecasound - dowi±zania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
