@@ -9,14 +9,14 @@ Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interfac
 Summary(pl):	Modu³ Perla Audio::Ecasound - dowi±zania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
 Version:	0.2
-Release:	3
+Release:	4
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-ecasound2.2.patch
 BuildRequires:	ecasound-devel >= 2.2.0
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,6 +41,7 @@ miksowania oraz jako baza dla wtyczek LADSPA.
 
 %build
 echo 'y' | perl Makefile.PL
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 # test disabled by default - it hangs
@@ -61,9 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Audio/Ecasound.pm
-%dir %{perl_sitearch}/auto/Audio/Ecasound
-%{perl_sitearch}/auto/Audio/Ecasound/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Audio/Ecasound/*.so
+%{perl_vendorarch}/Audio/Ecasound.pm
+%dir %{perl_vendorarch}/auto/Audio/Ecasound
+%{perl_vendorarch}/auto/Audio/Ecasound/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Audio/Ecasound/*.so
 %{_mandir}/man3/*
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}
