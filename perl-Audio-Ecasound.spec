@@ -40,7 +40,7 @@ miksowania oraz jako baza dla wtyczek LADSPA.
 %patch -p1
 
 %build
-echo 'y' | perl Makefile.PL
+echo 'y' | %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
