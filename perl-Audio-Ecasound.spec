@@ -13,6 +13,7 @@ Release:	4
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	17b080dee8212e7fdaac277346d47879
 Patch0:		%{name}-ecasound2.2.patch
 BuildRequires:	ecasound-devel >= 2.2.0
 BuildRequires:	perl-devel >= 5.6
