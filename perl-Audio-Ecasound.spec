@@ -9,14 +9,14 @@ Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interfac
 Summary(pl):	Modu³ Perla Audio::Ecasound - dowi±zania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
 Version:	0.2
-Release:	3
+Release:	4
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-ecasound2.2.patch
 BuildRequires:	ecasound-devel >= 2.2.0
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
