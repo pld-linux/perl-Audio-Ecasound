@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Ecasound
 Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interface
-Summary(pl):	Modu³ Perla Audio::Ecasound - dowi±zania do interfejsu ecasound
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::Ecasound - dowiÄ…zania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
 Version:	0.91
 Release:	1
@@ -29,12 +29,12 @@ multitrack audio processing. It can be used for audio playback,
 recording, format conversions, effects processing, mixing and as a
 LADSPA plugin host.
 
-%description -l pl
-Modu³ Audio::Ecasound udostêpnia dowi±zania do interfejsu
-kontroluj±cego program ecasound. Umo¿liwia automatyzacjê czynno¶ci
-wykonywanych pod kontrol± tego programu. Ecasound to pakiet s³u¿±cy do
-obróbki wielo¶cie¿kowego d¼wiêku. Mo¿e byæ u¿ywany do odtwarzania,
-nagrywania, konwersji miêdzy formatami, przepuszczania przez efekty,
+%description -l pl.UTF-8
+ModuÅ‚ Audio::Ecasound udostÄ™pnia dowiÄ…zania do interfejsu
+kontrolujÄ…cego program ecasound. UmoÅ¼liwia automatyzacjÄ™ czynnoÅ›ci
+wykonywanych pod kontrolÄ… tego programu. Ecasound to pakiet sÅ‚uÅ¼Ä…cy do
+obrÃ³bki wieloÅ›cieÅ¼kowego dÅºwiÄ™ku. MoÅ¼e byÄ‡ uÅ¼ywany do odtwarzania,
+nagrywania, konwersji miÄ™dzy formatami, przepuszczania przez efekty,
 miksowania oraz jako baza dla wtyczek LADSPA.
 
 %prep
