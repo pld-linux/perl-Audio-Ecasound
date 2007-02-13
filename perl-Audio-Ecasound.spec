@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Ecasound
 Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interface
-Summary(pl.UTF-8):   Moduł Perla Audio::Ecasound - dowiązania do interfejsu ecasound
+Summary(pl.UTF-8):	Moduł Perla Audio::Ecasound - dowiązania do interfejsu ecasound
 Name:		perl-Audio-Ecasound
 Version:	0.91
 Release:	1
