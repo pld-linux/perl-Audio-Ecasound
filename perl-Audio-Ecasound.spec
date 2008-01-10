@@ -44,6 +44,7 @@ miksowania oraz jako baza dla wtyczek LADSPA.
 echo 'y' | %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 # test disabled by default - it hangs
