@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Audio/Ecasound.pm
 %dir %{perl_vendorarch}/auto/Audio/Ecasound
-%{perl_vendorarch}/auto/Audio/Ecasound/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/Ecasound/*.so
 %{_mandir}/man3/*
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}
