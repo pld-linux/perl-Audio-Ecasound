@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Ecasound
 Summary:	Audio::Ecasound Perl module - bindings to the ecasound control interface
